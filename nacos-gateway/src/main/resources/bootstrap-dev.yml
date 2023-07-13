@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://172.16.20.166:8848
+        namespace: 63c33501-e5a5-4502-8d00-68b325b506b5
+
+      config:
+        server-addr: http://172.16.20.166:8848
+        name: gateway
+        enable-remote-sync-config: true
+        refresh-enabled: true
+        file-extension: yaml
+        namespace: 63c33501-e5a5-4502-8d00-68b325b506b5

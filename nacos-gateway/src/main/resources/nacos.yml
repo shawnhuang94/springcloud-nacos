@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      enable: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: demo
+          uri: lb://demo
+          predicates:
+            - Path=/demo/*
+        - id: order
+          uri: lb://order
+          predicates:
+            - Path=/order/*
+
+
+
+server:
+  port: 9999
+
+
+
+

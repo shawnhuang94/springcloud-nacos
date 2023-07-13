@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: work-flow
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://172.16.20.166:8848
+        namespace: 63c33501-e5a5-4502-8d00-68b325b506b5
+        register-enabled: true
+        enabled: true
+
+      config:
+        server-addr: http://172.16.20.166:8848
+        name: work-flow
+        enable-remote-sync-config: true
+        refresh-enabled: true
+        file-extension: yaml
+        namespace: 63c33501-e5a5-4502-8d00-68b325b506b5
+
+
+
