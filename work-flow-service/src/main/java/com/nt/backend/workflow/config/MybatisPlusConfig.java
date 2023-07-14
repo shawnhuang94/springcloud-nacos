@@ -36,7 +36,7 @@ import java.util.Properties;
  */
 @Slf4j
 @Configuration
-@ComponentScan("com")
+//@ComponentScan("com")
 @MapperScan(basePackages = {"com.nt.backend.workflow.mapper"})
 public class MybatisPlusConfig {
 
